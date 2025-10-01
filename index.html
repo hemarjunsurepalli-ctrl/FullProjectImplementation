@@ -2,52 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Personal Portfolio</title>
+  <title>To-Do App (localStorage)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Arjun S</h1>
-    <nav id="nav">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <button id="menuBtn" aria-label="menu">☰</button>
-    </nav>
-  </header>
-
   <main>
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>Hi — I'm Arjun, an ECE student learning web development. I build small projects using HTML, CSS, and JS.</p>
-    </section>
-
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-      <ul>
-        <li>Portfolio website (this page)</li>
-        <li>To-do app (localStorage)</li>
-        <li>Product listing with filters</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-      <form onsubmit="alert('This is a demo. Replace with your backend or mailto.'); return false;">
-        <input placeholder="Your name" required />
-        <input placeholder="Your email" required />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
+    <h1>To-Do App</h1>
+    <form id="todoForm">
+      <input id="todoInput" placeholder="Add a task" required />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="todoList"></ul>
   </main>
-
-  <footer>
-    <small>Made with ❤️ — Open and edit freely</small>
-  </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
