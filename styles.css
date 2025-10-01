@@ -1,0 +1,19 @@
+/* Simple clean styling for the portfolio */
+*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+body{margin:0;color:#123;line-height:1.5;background:#f7f9f8}
+header{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;background:#185; color:#fff}
+header h1{margin:0;font-size:1.25rem}
+nav a{color:#dff; margin-right:12px; text-decoration:none}
+#menuBtn{display:none;background:transparent;border:0;color:#dff;font-size:1.25rem}
+main{max-width:900px;margin:28px auto;padding:0 18px}
+.card{background:#fff;padding:18px;margin-bottom:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+form input,form textarea{width:100%;padding:8px;margin:8px 0;border:1px solid #ddd;border-radius:6px}
+button{background:#185;color:#fff;padding:10px 14px;border:0;border-radius:8px;cursor:pointer}
+footer{max-width:900px;margin:12px auto;padding:8px 18px;text-align:center;color:#456}
+
+/* Responsive: show menu on small screens */
+@media(max-width:600px){
+  nav a{display:none}
+  #menuBtn{display:inline-block}
+  nav.open a{display:block;padding:8px 0}
+}
